@@ -1,14 +1,13 @@
-import React from 'react';
-import styles from './index.less';
+import { Button } from 'antd';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div>
-      <div className={styles.header}></div>
-      <div className={styles.content_1}>
-        <div className={styles.search}></div>
-      </div>
-      <div className={styles.content_2}></div>
+      <Link to="/demo">
+        <Button>进入中台</Button>
+      </Link>
+      <h1>首页模板</h1>
     </div>
   );
 }

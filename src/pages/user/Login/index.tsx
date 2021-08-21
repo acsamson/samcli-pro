@@ -1,5 +1,5 @@
 import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons';
-import { Alert, Space, message, Tabs } from 'antd';
+import { Alert, Space, message, Tabs, Button } from 'antd';
 import React, { useState } from 'react';
 import ProForm, { ProFormCaptcha, ProFormCheckbox, ProFormText } from '@ant-design/pro-form';
 import { useIntl, Link, history, FormattedMessage, SelectLang, useModel } from 'umi';
@@ -75,6 +75,9 @@ const Login: React.FC = () => {
 
   return (
     <div className={styles.container}>
+      <Link to="/">
+        <Button>返回首页</Button>
+      </Link>
       <div className={styles.lang} data-lang>
         {SelectLang && <SelectLang />}
       </div>
