@@ -19,14 +19,14 @@
     ],
   },
   {
-    path: '/demo',
+    path: '/~/demo',
     name: 'demo',
     icon: 'crown',
     access: 'canAdmin',
     routes: [
-      { path: '/demo', redirect: '/demo/list' },
+      { path: '/~/demo', redirect: '/~/demo/list' },
       {
-        path: '/demo/list',
+        path: '/~/demo/list',
         name: 'list.table-list',
         icon: 'table',
         component: './TableList',
@@ -37,6 +37,10 @@
     path: '/',
     layout: false,
     component: './Home',
+  },
+  {
+    path: '/~/',
+    redirect: '/~/demo',
   },
   {
     component: './404',
