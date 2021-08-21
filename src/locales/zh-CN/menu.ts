@@ -1,4 +1,6 @@
 export default {
+  'menu.demo': 'DEMO',
+  'menu.demo.list.table-list': 'table-list',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
   'menu.login': '登录',

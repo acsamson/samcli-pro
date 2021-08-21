@@ -1,4 +1,6 @@
 export default {
+  'menu.demo': 'DEMO',
+  'menu.demo.list.table-list': 'table-list',
   'menu.more-blocks': 'More Blocks',
   'menu.home': 'Home',
   'menu.login': 'Login',

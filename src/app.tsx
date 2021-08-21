@@ -6,6 +6,7 @@ import RightContent from '@/components/RightContent';
 import Footer from '@/components/Footer';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
 import { BookOutlined, LinkOutlined } from '@ant-design/icons';
+import whiteRouteList from '../config/whiteRouteList';
 
 const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
@@ -28,12 +29,14 @@ export async function getInitialState(): Promise<{
       const msg = await queryCurrentUser();
       return msg.data;
     } catch (error) {
+      window.console.log('获取用户信息失败, 重新跳转到登录页面');
       history.push(loginPath);
     }
     return undefined;
   };
-  // 如果是登录页面，不执行
-  if (history.location.pathname !== loginPath) {
+  // 如果是白名单内的页面，不用去获取用户信息
+  if (whiteRouteList.indexOf(history.location.pathname) === -1) {
+    window.console.log(history.location.pathname, '不在白名单内, 需要登录');
     const currentUser = await fetchUserInfo();
     return {
       fetchUserInfo,
@@ -59,7 +62,8 @@ export const layout: RunTimeLayoutConfig = ({ initialState }) => {
     onPageChange: () => {
       const { location } = history;
       // 如果没有登录，重定向到 login
-      if (!initialState?.currentUser && location.pathname !== loginPath) {
+      if (!initialState?.currentUser && whiteRouteList.indexOf(location.pathname) === -1) {
+        window.console.log(location.pathname, '用户信息错误, 或者路由不在白名单内, 需要登录');
         history.push(loginPath);
       }
     },

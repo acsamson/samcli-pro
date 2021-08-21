@@ -35,7 +35,8 @@
   },
   {
     path: '/',
-    redirect: '/demo',
+    layout: false,
+    component: './Home',
   },
   {
     component: './404',
