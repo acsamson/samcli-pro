@@ -89,7 +89,7 @@ const Login: React.FC = () => {
               <span className={styles.title}>
                 {intl.formatMessage({
                   id: 'system.title',
-                  defaultMessage: 'AC模板',
+                  defaultMessage: '通用中台模板',
                 })}
               </span>
             </Link>

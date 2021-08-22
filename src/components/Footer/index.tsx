@@ -5,7 +5,7 @@ export default () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: 'AC模板',
+    defaultMessage: '通用中台模板',
   });
 
   const currentYear = new Date().getFullYear();
@@ -15,8 +15,8 @@ export default () => {
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'ACWeb',
-          title: 'AC模板',
+          key: 'GeneralTemplate',
+          title: '通用中台模板',
           href: '/',
           blankTarget: true,
         },

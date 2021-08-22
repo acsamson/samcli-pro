@@ -1,5 +1,5 @@
 export default {
-  'pages.layouts.userLayout.title': 'AC模板',
+  'pages.layouts.userLayout.title': '通用中台模板',
   'pages.login.accountLogin.tab': '账户密码登录',
   'pages.login.accountLogin.errorMessage': '错误的用户名和密码(admin/ant.design)',
   'pages.login.failure': '登录失败，请重试！',
