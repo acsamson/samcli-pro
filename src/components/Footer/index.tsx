@@ -15,7 +15,7 @@ export default () => {
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'GeneralTemplate',
+          key: 'samcli-pro',
           title: '通用中台模板',
           href: '/',
           blankTarget: true,
