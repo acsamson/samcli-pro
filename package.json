@@ -1,6 +1,6 @@
 {
-  "name": "general-template",
-  "version": "5.0.0",
+  "name": "samcli-pro",
+  "version": "1.0.0",
   "private": true,
   "description": "An out-of-box UI solution for enterprise applications",
   "scripts": {
