@@ -1,6 +1,16 @@
 # 🍧Intro
 
-cli（micro front end + node server）
+This project contains two different branch: 
+* fullstack: cli（micro front end for enterprise applications + node server）
+* fepro: micro front end for enterprise applications
+
+And I set fullstack branch as main branck. You can use samcli-create to first settled your project:
+```shell
+npm i -g samcli-create
+samcli-create your_project_name
+```
+
+
 
 ## 🍧Start
 
