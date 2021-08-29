@@ -1,15 +1,27 @@
-# Intro
+# 🍧Intro
 
-基于 Ant Desgin Pro 魔改打造, 去除冗余说明, 仅需少量修改即可作为自己项目的中台使用, 并增加官网首页, 方便开发者使用
+cli（micro front end + node server）
 
-### Step0: 初始化
+## 🍧Start
 
+Before we start, We need to determine if our environment has dependencies installed:
+* xl_close_port
+* mongodb
+
+if not, we run `sh ./init-onlyOnce.sh` to install it.
+
+start main:
 ```shell
+cd server
+yarn
+cd ../client/main
+yarn
+cd ../../
+sh ./start.sh
+```
+start children:
+```shell
+cd client/app/docs
 yarn
 yarn start
 ```
-
-### Step1: 替换为自己平台的名称
-
-1. 全局搜索 samcli-pro ===> 你的平台英文名称
-2. 全局搜索 通用中台模板 ===> 你的平台中文名称
