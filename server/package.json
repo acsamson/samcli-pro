@@ -9,7 +9,7 @@
     },
     "scripts": {
         "client": "cd ../client/main && yarn start && yarn estart",
-        "startAll": "concurrently \"npm run client\" \"wait-on http://localhost:8000 && egg-scripts start --daemon --title=egg-server-samtools-server-egg\"",
+        "startAll": "concurrently \"npm run client\" \"wait-on http://localhost:8000 && egg-bin dev\"",
         "start": "egg-scripts start --daemon --title=egg-server-d",
         "stop": "egg-scripts stop --title=egg-server-samcli-pro-server",
         "dev": "egg-bin dev",
