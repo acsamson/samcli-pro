@@ -1,7 +1,8 @@
+[简体中文](./README.zh-CN.md)
 # 🍧Intro
 
 This project contains two different branch: 
-* fullstack: cli（micro front end for enterprise applications + node server）
+* fullstack: cli（micro front end for enterprise applications + node server + mongoDB）
 * fepro: micro front end for enterprise applications
 
 And I set fullstack branch as main branck. You can use samcli-create to first settled your project:
@@ -20,7 +21,7 @@ Before we start, We need to determine if our environment has dependencies instal
 
 if not, we run `sh ./init-onlyOnce.sh` to install it.
 
-start main:
+`start main:`
 ```shell
 cd server
 yarn
@@ -29,7 +30,7 @@ yarn
 cd ../../
 sh ./start.sh
 ```
-start children:
+`start children:`
 ```shell
 cd client/app/docs
 yarn
