@@ -9,5 +9,9 @@
 echo '👏👏👏 欢迎使用samcli-pro, 正在启动前后端应用...'
 xl_close_port -p 8000
 xl_close_port -p 7001
-cd server
+xl_close_port -p 3000
+cd ../client/main
+yarn
+cd ../../server
+yarn
 yarn startAll

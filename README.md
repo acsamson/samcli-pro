@@ -22,11 +22,6 @@ if not, we run `sh ./init-onlyOnce.sh` to install it.
 
 start main:
 ```shell
-cd server
-yarn
-cd ../client/main
-yarn
-cd ../../
 sh ./start.sh
 ```
 start children:
